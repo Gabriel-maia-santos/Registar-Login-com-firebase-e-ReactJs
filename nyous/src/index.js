@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Register from './pages/register';
+import EventosPage from './pages/eventos';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FirebaseAppProvider } from "reactfire";
@@ -11,7 +11,7 @@ import firebaseConfig from "./utils/firebaseConfig";
 ReactDOM.render(
   <React.StrictMode>
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-      <Register />
+      <EventosPage />
     </FirebaseAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
